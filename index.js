@@ -14,7 +14,7 @@ const server = app.listen(PORT, () => console.log('~~~ Tuning in to the waves of
 
 //socket setup
 var io = socket(server);
-const RoomService = require('./RoomService')(io);
+const RoomService = require('./roomService')(io);
 io.sockets.on('connection', RoomService.listen);
 io.sockets.on('error', e => console.log(e));
 
