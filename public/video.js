@@ -24,6 +24,7 @@
     
     socket.on('full', function(room) {
         alert('Room ' + room + ' is full!');
+        document.getElementById('otherName').innerText = 'This room is full, sorry:('
     });
 
     socket.on('bye', function(id) {
@@ -117,8 +118,9 @@
         remoteVideo.setAttribute("id", id.replace(/[^a-zA-Z]+/g, "").toLowerCase());
         remoteVideo.setAttribute("playsinline", "true");
         remoteVideo.setAttribute("autoplay", "true");
-        remoteVideo.style.height = '400px';
+        remoteVideo.style.height = '300px';
         remoteVideo.style.width = '400px';
+        remoteVideo.style.display = 'inlineBlock';
         remoteVideos.appendChild(remoteVideo);
         if (remoteVideos.querySelectorAll("video").length === 1) {
             remoteVideos.setAttribute("class", "one remoteVideos");

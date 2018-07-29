@@ -1,7 +1,7 @@
 /** @type {SocketIO.Server} */
 
 let _io;
-const MAX_CLIENTS = 3;
+const MAX_CLIENTS = 2;
 
 
 /** @param {SocketIO.Socket} socket */

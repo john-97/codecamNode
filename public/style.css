@@ -1,3 +1,19 @@
+.videos {
+  /* width: 40%; */
+  display: inline-block;
+}
+
+.chat {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+video {
+  display: inline-block;
+}
+
+
 /* .booth {
     width: 400px;
     background: #ccc;

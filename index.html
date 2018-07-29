@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
 <body>
+    <div class='videos'>
+        <div>You</div>
+        <video class="localVideo" width='400' height='300' playsinline autoplay></video>
+        <div class="remoteVideos">
+            <div id='otherName'>Other's Available</div>
+        </div>
+    </div>
 
-    <video class="localVideo" width='400' height='400' playsinline autoplay></video>
-    <div class="remoteVideos"></div>
+    <div class="chat">
+        <span>cwiuvqiuerbv</span>
+    </div>
     
     <script src="/socket.io/socket.io.js"></script>
     <!-- <script src="/index.js"></script> -->
