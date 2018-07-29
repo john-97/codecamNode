@@ -23,7 +23,7 @@ io.sockets.on('error', e => console.log(e));
  *              ROUTES
  * ===================================
  */
-app.get('/', function (req, res) {
+app.get('*', function (req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
