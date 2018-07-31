@@ -1,16 +1,24 @@
 .videos {
   /* width: 40%; */
   display: inline-block;
+  margin: 0 auto;
+  justify-content: center;
+  border-left: 50px
 }
 
-.chat {
+/* .chat {
   width: 40%;
   display: inline-block;
   vertical-align: top;
-}
+} */
 
 video {
   display: inline-block;
+}
+
+#wrapContainer {
+  vertical-align: top;
+  justify-content: center
 }
 
 

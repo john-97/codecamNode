@@ -1,27 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html>
+  <head>
+    <title>Codecam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.scss">
     <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class='videos'>
-        <div>You</div>
-        <video class="localVideo" width='400' height='300' playsinline autoplay></video>
-        <div class="remoteVideos">
-            <div id='otherName'>Other's Available</div>
-        </div>
-    </div>
+ </head>
 
-    <div class="chat">
-        <span>cwiuvqiuerbv</span>
+  <body>
+    <section class="hero is-info is-fullheight">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="code_icon.png" alt="Logo">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div id='wrapContainer'>
+        <div class='videos'>
+            <div>You</div>
+            <video class="localVideo" width='400' height='300' playsinline autoplay></video>
+            <div class="remoteVideos">
+                <div id='otherName'>Other's Available</div>
+            </div>
+        </div>
+
+        <div class="chat">
+            <span>cwiuvqiuerbv</span>
+        </div>
     </div>
     
     <script src="/socket.io/socket.io.js"></script>
     <!-- <script src="/index.js"></script> -->
     <script type="application/javascript" src="video.js"></script>
-</body>
+  </section>
+  </body>
 </html>

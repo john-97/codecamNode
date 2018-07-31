@@ -62,11 +62,11 @@
 
         peerConnection.onaddstream = event => handleRemoteStreamAdded(event.stream, id);
         
-        peerConnection.onicecandidate = function(event) {
-            if (event.candidate) {
-                socket.emit('candidate', id, event.candidate);
-            }
-        };
+        // peerConnection.onicecandidate = function(event) {
+        //     if (event.candidate) {
+        //         socket.emit('candidate', id, event.candidate);
+        //     }
+        // };
     });
 
     //OFFER FROM ANOTHER PEER
@@ -87,9 +87,9 @@
 
         peerConnection.onaddstream = event => handleRemoteStreamAdded(event.stream, id);
         peerConnection.onicecandidate = function(event) {
-        if (event.candidate) {
-            socket.emit('candidate', id, event.candidate);
-        }
+            if (event.candidate) {
+                socket.emit('candidate', id, event.candidate);
+            }
         };
     });
 
