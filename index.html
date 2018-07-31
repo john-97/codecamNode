@@ -27,20 +27,25 @@
         </div>
       </nav>
     </div>
-    
-    <div id='wrapContainer'>
-        <div class='videos'>
+    <div class="columns">
+      <div class="column">
+        <div id='wrapContainer' class="has-text-centered">
+          <div class='videos'>
             <div>You</div>
-            <video class="localVideo" width='400' height='300' playsinline autoplay></video>
-            <div class="remoteVideos">
-                <div id='otherName'>Other's Available</div>
+              <video class="localVideo" width='400' height='300' playsinline autoplay></video>
             </div>
+          </div>
         </div>
-
-        <div class="chat">
-            <span>cwiuvqiuerbv</span>
+      
+      <div class="column">
+        <div class="remoteVideos">
+          <div id='otherName'>Other's Available</div>
         </div>
+      </div>
     </div>
+
+
+    
     
     <script src="/socket.io/socket.io.js"></script>
     <!-- <script src="/index.js"></script> -->
